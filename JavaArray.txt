@@ -1,0 +1,84 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package aliounebadara;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ *
+ * @author mekeemet
+ */
+public class AliouneBadara {
+
+    /**
+     * @param args the command line arguments
+     */
+    public int InversionInt(ArrayList<Integer> arrayInt) {
+        Collections.sort(arrayInt, Collections.reverseOrder());
+        int y = 0;
+        for (int i : arrayInt) {
+            y = i;
+            System.out.println(i);
+        }
+        return y;
+    }
+
+    public float InversFloat(ArrayList<Float> arrayFlaot) {
+        Collections.sort(arrayFlaot, Collections.reverseOrder());
+        float f = 0;
+        for (Float float1 : arrayFlaot) {
+            f = float1;
+            System.out.println(float1);
+        }
+        return f;
+    }
+
+    public String InversionString(ArrayList<String> arraylist) {
+        Collections.sort(arraylist, Collections.reverseOrder());
+        String str2 = null;
+        for (String str : arraylist) {
+            str2 = str;
+            System.out.println(str);
+        }
+
+        return str2;
+    }
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //Inversion Integer
+        ArrayList<Integer> arrayInt = new ArrayList<Integer>();
+        arrayInt.add(1);
+        arrayInt.add(8);
+        arrayInt.add(3);
+        arrayInt.add(5);
+        System.out.println("Inversion Int");
+        AliouneBadara i = new AliouneBadara();
+        i.InversionInt(arrayInt);
+        //Inversion Flaot
+        ArrayList<Float> arrayfloat = new ArrayList<Float>();
+        arrayfloat.add(0.0f);
+        arrayfloat.add(8.2f);
+        arrayfloat.add(3.5f);
+        arrayfloat.add(5.0f);
+        System.out.println("Inversion Int");
+        AliouneBadara f = new AliouneBadara();
+        f.InversFloat(arrayfloat);
+        //Inversion Float
+        ArrayList<String> arraylist = new ArrayList<String>();
+        arraylist.add("A");
+        arraylist.add("B");
+        arraylist.add("C");
+        arraylist.add("Z");
+        System.out.println("Inversion String");
+        AliouneBadara str = new AliouneBadara();
+        str.InversionString(arraylist);
+
+    }
+
+}
+
